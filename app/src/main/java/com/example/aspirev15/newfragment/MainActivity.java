@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import static com.example.aspirev15.newfragment.R.id.tabLayout;
+
 public class MainActivity extends AppCompatActivity {
     TabLayout mTabLayout;
     ViewPager mViewPager;
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mTabLayout = (TabLayout) findViewById(R.id.tabLayout);
+        mTabLayout = (TabLayout) findViewById(tabLayout);
         mViewPager = (ViewPager) findViewById(R.id.view_pager);
         final String[] title = new String[]{"New", "Popular"};
         ArrayList<Fragment> fragments = new ArrayList<>();
